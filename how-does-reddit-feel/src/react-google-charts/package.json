@@ -1,0 +1,102 @@
+{
+  "_from": "react-google-charts",
+  "_id": "react-google-charts@2.0.26",
+  "_inBundle": false,
+  "_integrity": "sha512-uQk0lhNmdRATwcEHuXqQurd4XF0xq/muW4jVFAAeywT/1e7MQkQzR/PaDP8zV14D8GqHYxDHXE7nMgcxWHhlOg==",
+  "_location": "/react-google-charts",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-google-charts",
+    "name": "react-google-charts",
+    "escapedName": "react-google-charts",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-google-charts/-/react-google-charts-2.0.26.tgz",
+  "_shasum": "1a941f634f0a67d89e4cfc923bbdb17856b54d98",
+  "_spec": "react-google-charts",
+  "_where": "/Users/Jeff/Desktop/Projects/RedditSentiments/how-does-reddit-feel",
+  "author": {
+    "name": "Rakan Nimer"
+  },
+  "bugs": {
+    "url": "https://github.com/RakanNimer/react-google-charts/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "react-load-script": "^0.0.6"
+  },
+  "deprecated": false,
+  "description": "react-google-charts React component",
+  "devDependencies": {
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "cypress": "^3.0.3",
+    "docz": "^0.9.5",
+    "docz-theme-default": "^0.9.5",
+    "husky": "^1.0.0-rc.13",
+    "jsdoc": "^3.4.0",
+    "jsdom": "^9.5.0",
+    "lint-staged": "^7.2.0",
+    "object-assign": "^4.1.0",
+    "parcel-bundler": "^1.9.7",
+    "prettier": "^1.13.7",
+    "react": "^16.3.2",
+    "react-component-component": "^1.2.1",
+    "react-dom": "^16.3.2",
+    "rollup": "^0.63.5",
+    "rollup-plugin-typescript2": "^0.16.1",
+    "typescript": "2.9"
+  },
+  "files": [
+    "dist/"
+  ],
+  "gh-pages-deploy": {
+    "staticpath": "demo/dist/"
+  },
+  "homepage": "https://rakannimer.github.io/react-google-charts/",
+  "jsnext:main": "dist/index.esm.js",
+  "keywords": [
+    "react",
+    "google",
+    "charts"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write"
+    ]
+  },
+  "main": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
+  "name": "react-google-charts",
+  "peerDependencies": {
+    "react": ">=15.0.0",
+    "react-dom": ">=15.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RakanNimer/react-google-charts.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "docz:build": "docz build",
+    "docz:dev": "docz dev",
+    "precommit": "lint-staged && npm run test",
+    "prepublish": "npm run build",
+    "start": "parcel demo/index.html -d demo-build/",
+    "test": "tsc",
+    "test:e2e": "cypress run --record --key 992c387d-9654-42ea-aad7-bb51e16aec9b"
+  },
+  "type": "react-component",
+  "types": "dist/index.d.ts",
+  "umd": "dist/index.umd.js",
+  "version": "2.0.26"
+}

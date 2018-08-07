@@ -22,6 +22,24 @@
   font-size: large;
 }
 
+.search {
+  width: 170px;
+  border: none;
+  border-bottom: solid #222 2px;
+  font-size: 0.95em;
+}
+
+.headerNav{
+  cursor: pointer;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
