@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-const SEARCH_API = "http://localhost:8080/?q=";
+const SEARCH_API = "https://boiling-stream-94503.herokuapp.com/?q=";
 const vader = require('vader-sentiment');
 
 
