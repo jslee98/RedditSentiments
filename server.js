@@ -2,7 +2,7 @@ const express = require('express');
 const fetch = require('node-fetch');
 const app = express();
 const bodyParser= require('body-parser')
-const COMMENT_SEARCH_URL = 'https://api.pushshift.io/reddit/comment/search?q=trump';
+const COMMENT_SEARCH_URL = 'https://api.pushshift.io/reddit/comment/search?size=400&q=';
 const port = process.env.PORT || 8080;
 //const SEARCH_URL = "https://www.reddit.com/search.json?q=Trump";
 
