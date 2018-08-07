@@ -12,7 +12,7 @@
     "react-scripts": "1.1.4",
     "vader-sentiment": "^1.1.3"
   },
-  "homepage" : "./",
+  "homepage": "./",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -20,6 +20,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "publish":  "git add . && git commit -m 'fixes' && git subtree push --prefix how-does-reddit-feel/build origin gh-pages"
+    "publish": "git add . && git commit -m 'fixes' && git subtree push --prefix how-does-reddit-feel/build origin gh-pages"
   }
 }
