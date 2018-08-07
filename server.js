@@ -9,17 +9,13 @@ const port = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json());
 app.use(function(req, res, next) { res.header("Access-Control-Allow-Origin", "*"); res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"); res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');next(); });
-app.set('view engine', 'ejs')
-
-app.get('/', (req, res) => {
-  res.status(200).send({data:[]});
-});
+app.set('view engine', 'ejs');
 
 app.get('/*', (req, res) => {
   console.log(req.query);
-  //let query = COMMENT_SEARCH_URL + req.query.q.split(" ").join("%22");
+  let query = COMMENT_SEARCH_URL + req.query.q.split(" ").join("%22");
   //console.log(query);
-  fetch(COMMENT_SEARCH_URL)
+  fetch(query)
   .then(data => data.json())
   .then(data => {
     //console.log(data);
