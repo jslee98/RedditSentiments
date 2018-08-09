@@ -6,9 +6,10 @@ import Chart from "./react-google-charts";
 import InputHints from 'react-input-hints';
 import './App.css';
 
-//const SEARCH_API = "https://boiling-stream-94503.herokuapp.com/?q=";
-const SEARCH_API = "http://localhost:8080/search/?q=";
-const TOP_API = "http://localhost:8080/top/?q=";
+const SEARCH_API = "https://boiling-stream-94503.herokuapp.com/search/?q=";
+const TOP_API = "https://boiling-stream-94503.herokuapp.com/top/?q=";
+//const SEARCH_API = "http://localhost:8080/search/?q=";
+//const TOP_API = "http://localhost:8080/top/?q=";
 const vader = require('vader-sentiment');
 
 class App extends Component {
