@@ -3,15 +3,20 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  filter: brightness(100);
+  height: 130px;
+  width: 140px;
+}
+
+.App-logo:hover {
+  opacity: 0.7;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: #4659AB;
+  height: 160px;
   padding: 20px;
-  color: white;
+  color: #F5F2F1;
 }
 
 .App-title {
@@ -23,14 +28,35 @@
 }
 
 .search {
-  width: 170px;
-  border: none;
-  border-bottom: solid #222 2px;
+  width: 100%;
   font-size: 0.95em;
+  border: 1px solid #ccc;
+  border-right: 0px;
+  height: 34px;
+  border-radius: 4px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-left: 10px;
 }
 
+.btn-default:focus {
+    background-color: #fff;
+    border-color: #ccc;
+}
 .headerNav{
   cursor: pointer;
+}
+
+.analyzeButton {
+  background-color: #4659AB;
+  color: white;
+  border-color: #4659AB;
+}
+
+.analyzeButton:hover {
+  background-color: #1f1a58;
+  color: white;
+  border-color: #1f1a58;
 }
 
 input:focus,
